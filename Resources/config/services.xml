@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+
+        <service id="ddeboer_mail_merge.livedocx" class="Zend\Service\LiveDocx\MailMerge">
+            <call method="setUsername">
+                <argument>%ddeboer_live_docx.username%</argument>
+            </call>
+            <call method="setPassword">
+                <argument>%ddeboer_live_docx.password%</argument>
+            </call>
+            <call method="setWsdl">
+                <argument>%ddeboer_live_docx.wsdl%</argument>
+            </call>
+        </service>
+
+        <service id="livedocx" alias="ddeboer_mail_merge.livedocx" />
+
+    </services>
+    
+</container>
