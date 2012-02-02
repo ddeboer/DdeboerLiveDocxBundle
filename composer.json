@@ -33,6 +33,5 @@
     "autoload": {
         "psr-0": { "Ddeboer\\LiveDocxBundle": "" }
     },
-    "target-dir": "Ddeboer/LiveDocxBundle"
-}
+    "target-dir": "Ddeboer/LiveDocxBundle"    
 }
