@@ -1,8 +1,49 @@
 Ddeboer Symfony2 LiveDocx Bundle
 ================================
 
-This service provides you with access to Zend\Service\LiveDocx in your Symfony2
-projects. Zend Framework 2 must be installed as a vendor.
+## Installation
 
-See the [Zend Framework documentation](http://framework.zend.com/manual/en/zend.service.livedocx.html)
-for more information.
+1. Include the bundle in your `composer.json`:
+
+```
+"require": {
+    ...
+    "ddeboer/livedocx-bundle": "master-dev",
+    ...
+}
+
+```
+
+This will also fetch the Zend Framework 2 dependency. Make sure you include the
+Composer autoloader in your Symfony2 project.
+
+2. Add the bundle to your `AppKernel.php`:
+
+```
+    public function registerBundles()
+    {
+        $bundles = array(
+            ...
+            new Ddeboer\LiveDocxBundle\DdeboerLiveDocxBundle(),
+            ...
+        );
+    }
+
+```
+
+## Configuration
+
+In your `config.yml`, add:
+
+```
+ddeboer_live_docx:
+  username: [your username]
+  password: [your password]
+```
+
+If you want to use another WSDL than the default, add:
+
+```
+  wsdl: [url of your WSDL]
+
+```
