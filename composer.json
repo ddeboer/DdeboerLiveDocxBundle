@@ -29,5 +29,10 @@
     },
     "require": {
         "zend/zf2": "master-dev"
-    }
+    },
+    "autoload": {
+        "psr-0": { "Ddeboer\\LiveDocxBundle": "" }
+    },
+    "target-dir": "Ddeboer/LiveDocxBundle"
+}
 }
