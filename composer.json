@@ -1,0 +1,33 @@
+{
+    "name": "ddeboer/livedocx-bundle",
+    "type": "symfony-bundle",
+    "description": "Include the Zend Framework's LiveDocx client in your Symfony2 project",
+    "keywords": [ "doc", "pdf", "mailmerge" ],
+    "homepage": "https://github.com/ddeboer/DdeboerLiveDocxBundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "David de Boer",
+            "email": "david@ddeboer.nl"
+        }
+    ],
+    "repositories": {
+        "zend-framework-2": {
+            "package": {
+                "name": "zend/zf2",
+                "version": "master-dev",
+                "source": {
+                    "type": "git",
+                    "url": "http://github.com/zendframework/zf2.git",
+                    "reference": "master-dev"
+                },
+                "autoload": {
+                    "psr-0": { "Zend\\": "library/" }
+                }
+            }
+        }
+    },
+    "require": {
+        "zend/zf2": "master-dev"
+    }
+}
