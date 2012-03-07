@@ -11,24 +11,25 @@
             "email": "david@ddeboer.nl"
         }
     ],
-    "repositories": {
-        "zend-framework-2": {
-            "package": {
-                "name": "zend/zf2",
-                "version": "master-dev",
-                "source": {
-                    "type": "git",
-                    "url": "http://github.com/zendframework/zf2.git",
-                    "reference": "master-dev"
-                },
-                "autoload": {
-                    "psr-0": { "Zend\\": "library/" }
-                }
-            }
-        }
-    },
+    "repositories": [
+		{
+	        "type": "package", 
+	        "package": {
+	            "name": "zend/zf2",
+	            "version": "dev-master",
+	            "source": {
+	                "type": "git",
+	                "url": "http://github.com/zendframework/zf2.git",
+	                "reference": "master"
+	            },
+	            "autoload": {
+	                "psr-0": { "Zend\\": "library/" }
+	            }
+	        }
+	    }
+	],
     "require": {
-        "zend/zf2": "master-dev"
+        "zend/zf2": ">=2.0.0"
     },
     "autoload": {
         "psr-0": { "Ddeboer\\LiveDocxBundle": "" }
