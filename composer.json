@@ -16,11 +16,15 @@
 	        "type": "package", 
 	        "package": {
 	            "name": "zend/zf2",
-	            "version": "dev-master",
+	            "version": "2.0.0-beta3",
+				"dist": {
+					"type": "zip",
+					"url": "https://github.com/zendframework/zf2/zipball/release-2.0.0beta3"
+				},
 	            "source": {
 	                "type": "git",
 	                "url": "http://github.com/zendframework/zf2.git",
-	                "reference": "master"
+	                "reference": "2.0.0-beta3"
 	            },
 	            "autoload": {
 	                "psr-0": { "Zend\\": "library/" }
@@ -29,7 +33,7 @@
 	    }
 	],
     "require": {
-        "zend/zf2": ">=2.0.*-dev"
+        "zend/zf2": ">=2.0.0-beta3"
     },
     "autoload": {
         "psr-0": { "Ddeboer\\LiveDocxBundle": "" }
